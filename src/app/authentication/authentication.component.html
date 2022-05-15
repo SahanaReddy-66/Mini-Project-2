@@ -1,0 +1,14 @@
+<!-- <p>authentication works!</p> -->
+<!-- <app-authentication (messageEvent)="receiveMessage($event)"></app-authentication> -->
+<div *ngIf="show">
+    <p class="color">Click below to Log in </p>
+    <button (click)="login()" class="btn btn-primary">LogIn</button>
+<br> <br>
+<p class="color">Click below to Register</p>
+<button (click)="register()" class="btn btn-primary">Register</button>
+</div>
+
+<!-- 
+<div>
+    <app-authentication (messageEvent)="receiveMessage($event)"></app-authentication>
+</div> -->
