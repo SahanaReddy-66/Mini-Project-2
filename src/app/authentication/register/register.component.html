@@ -1,0 +1,27 @@
+<!-- <p>register works!</p> -->
+<div class="login">
+    <form #registerForm="ngForm" (ngSubmit)="submitForm(registerForm)">
+        <label for="">First Name</label>
+        <input type="text" ngModel name="Fname" #Fname required>
+        <br>
+        <label for="">Last Name</label>
+        <input type="text" ngModel name="Lname" #Lname required>
+        <br>
+
+        <label for="">Email</label>
+        <input type="email" ngModel name="email" #Email required>
+        <br>
+        <label for="">Phone No.</label>
+        <input type="number" ngModel name="number" #number required>
+        <br>
+        <label for="">Password</label>
+        <input type="password" ngModel name="password" #password required>
+        <br>
+        <label for=""> Confirm Password</label>
+        <input type="password" ngModel name="Cpassword" #Cpassword required>
+        <br>
+        <button class="btn btn-primary buttonDesign" type="submit"
+            [disabled]="registerForm.form.invalid">Register</button>
+        <br>
+    </form>
+</div>

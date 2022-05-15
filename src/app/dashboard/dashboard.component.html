@@ -1,0 +1,98 @@
+<!-- <p>dashboard works!</p> -->
+<div>
+    <mat-toolbar class="top">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>Dash Board</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>share</mat-icon>
+        </button>
+    </mat-toolbar>
+</div>
+<br>
+
+<div class="row">
+    <div class="col-3 ">
+        <div class="sidenav" (click)="about()"> About </div>
+        <div class="sidenav" (click)="services()">Services</div>
+        <div class="sidenav" (click)="clients()">Clients</div>
+        <div class="sidenav" (click)="contact()">Contact</div>
+    </div>
+    <div class="col-8">
+        <div>
+            <h2 class="basic">Basic Arithmetic Operations</h2>
+        </div>
+        <div>
+            <label for="">Enter 'a' value</label>
+            <input type="number"  [(ngModel)]="aValue">
+        </div>
+        <div>
+            <label for="">Enter 'b' value</label>
+            <input type="number"  [(ngModel)]="bValue">
+        </div>
+        <div>
+            <button class="space   btn btn-primary"  (click)="addtion()">Add</button>
+            <button class="space   btn btn-primary"(click)="subtraction()" >Sub</button>
+            <button class="space   btn btn-primary" (click)="multiplication()" >Mul</button>
+            <button class="space   btn btn-primary" (click)="division()" >Div</button>
+        </div>
+        <div>
+            <label for="">Result</label>
+            <input type="number"   [(ngModel)]="result">
+        </div>
+    </div>
+   
+
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4 footer" >
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!--Grid row-->
+      <div class="row">
+  
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+  
+          <!-- Form -->
+          <form class="form-inline">
+            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+              aria-label="Search">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </form>
+          <!-- Form -->
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+  
+          <form class="input-group">
+            <input type="text" class="form-control form-control-sm" placeholder="Your email"
+              aria-label="Your email" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button  type="button">Sign up</button>
+            </div>
+          </form>
+  
+        </div>
+        <!--Grid column-->
+  
+      </div>
+      <!--Grid row-->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+   
+  
+  </footer>
+  <!-- Footer -->
+  
