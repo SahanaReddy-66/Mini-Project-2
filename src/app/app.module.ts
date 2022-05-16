@@ -16,6 +16,7 @@ import { AboutComponent } from './dashboard/about/about.component';
 import { ServicesComponent } from './dashboard/services/services.component';
 import { ClientsComponent } from './dashboard/clients/clients.component';
 import { ContactComponent } from './dashboard/contact/contact.component';
+import { DesignDirective } from './shared/design.directive';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ContactComponent } from './dashboard/contact/contact.component';
     ServicesComponent,
     ClientsComponent,
     ContactComponent,
+    DesignDirective,
   ],
   imports: [
     BrowserModule,
